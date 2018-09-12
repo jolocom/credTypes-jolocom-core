@@ -1,0 +1,11 @@
+{
+  "name": "@credTypes/jolocom-core",
+  "version": "0.0.1",
+  "description": "Collection of metadata definitions for the core Jolocom credential types",
+  "main": "js/index.js",
+  "typings": "js/index.d.ts",
+  "license": "MIT",
+  "scripts": {
+	  "prepublish": "rm -rf ./js; tsc"
+  }
+}
