@@ -1,4 +1,4 @@
-export type validContextEntry = string | { [key: string]: string }
+export type validContextEntry = string | { [key: string]: validContextEntry }
 
 export interface BaseMetadata {
   type: string[]
