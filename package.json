@@ -1,5 +1,5 @@
 {
-  "name": "@credTypes/jolocom-core",
+  "name": "cred-types-jolocom-core",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jolocom/credTypes-jolocom-core.git"
