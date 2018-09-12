@@ -1,6 +1,8 @@
-import { ClaimsMetadataSummary } from "./types"
+import { ClaimsMetadataSummary } from './types'
 
-export const claimsMetadata : ClaimsMetadataSummary = {
+export { BaseMetadata, validContextEntry } from './types'
+
+export const claimsMetadata: ClaimsMetadataSummary = {
   emailAddress: {
     type: ['Credential', 'ProofOfEmailCredential'],
     name: 'Email address',
@@ -36,6 +38,5 @@ export const claimsMetadata : ClaimsMetadataSummary = {
         PublicProfileCredential: 'https://identity.jolocom.com/terms/PublicProfileCredential'
       }
     ]
-
   }
 }
