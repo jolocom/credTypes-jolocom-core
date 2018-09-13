@@ -4,7 +4,7 @@
     "type": "git",
     "url": "git+https://github.com/jolocom/credTypes-jolocom-core.git"
   },
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Collection of metadata definitions for the core Jolocom credential types",
   "main": "js/index.js",
   "typings": "js/index.d.ts",
