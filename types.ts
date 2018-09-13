@@ -4,7 +4,9 @@ export interface BaseMetadata {
   type: string[]
   name: string
   context?: validContextEntry[]
-  claimInterface?: {}
+  claimInterface?: {
+    [key: string]: string | number | boolean
+  }
 }
 
 export interface EmailClaimMetadata extends BaseMetadata {
