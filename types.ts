@@ -17,7 +17,7 @@ export interface EmailClaimMetadata extends BaseMetadata {
 
 export interface MobilePhoneNumberClaimMetadata extends BaseMetadata {
   claimInterface?: {
-    mobilePhoneNumber: string
+    telephone: string
   }
 }
 
