@@ -17,7 +17,8 @@ export const claimsMetadata: ClaimsMetadataSummary = {
     name: 'Mobile Phone Number',
     context: [
       {
-        ProofOfMobilePhoneNumberCredential: 'https://identity.jolocom.com/terms/ProofOfMobilePhoneNumberCredential'
+        ProofOfMobilePhoneNumberCredential: 'https://identity.jolocom.com/terms/ProofOfMobilePhoneNumberCredential',
+        telephone: "https://schema.org/telephone"
       }
     ]
   },
