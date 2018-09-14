@@ -9,7 +9,7 @@ export const claimsMetadata: ClaimsMetadataSummary = {
     context: [
       {
         ProofOfEmailCredential: 'https://identity.jolocom.com/terms/ProofOfEmailCredential',
-        schema: "http://schema.org",
+        schema: "http://schema.org/",
         email: "schema:email"
       }
     ]
@@ -30,7 +30,7 @@ export const claimsMetadata: ClaimsMetadataSummary = {
     context: [
       {
         ProofOfNameCredential: 'https://identity.jolocom.com/terms/ProofOfNameCredential',
-        schema: "http://schema.org",
+        schema: "http://schema.org/",
         familyName: "schema:familyName",
         givenName: "schema:givenName"
       }
@@ -42,7 +42,7 @@ export const claimsMetadata: ClaimsMetadataSummary = {
     context: [
       {
         PublicProfileCredential: 'https://identity.jolocom.com/terms/PublicProfileCredential',
-        schema: "http://schema.org",
+        schema: "http://schema.org/",
         name: "schema:name",
         description: "schema:description",
         image: "schema:image",
