@@ -8,7 +8,9 @@ export const claimsMetadata: ClaimsMetadataSummary = {
     name: 'Email address',
     context: [
       {
-        ProofOfEmailCredential: 'https://identity.jolocom.com/terms/ProofOfEmailCredential'
+        ProofOfEmailCredential: 'https://identity.jolocom.com/terms/ProofOfEmailCredential',
+        schema: "http://schema.org",
+        email: "schema:email"
       }
     ]
   },
@@ -18,7 +20,7 @@ export const claimsMetadata: ClaimsMetadataSummary = {
     context: [
       {
         ProofOfMobilePhoneNumberCredential: 'https://identity.jolocom.com/terms/ProofOfMobilePhoneNumberCredential',
-        telephone: "https://schema.org/telephone"
+        telephone: "http://schema.org/telephone"
       }
     ]
   },
@@ -27,7 +29,10 @@ export const claimsMetadata: ClaimsMetadataSummary = {
     name: 'Name',
     context: [
       {
-        ProofOfNameCredential: 'https://identity.jolocom.com/terms/ProofOfNameCredential'
+        ProofOfNameCredential: 'https://identity.jolocom.com/terms/ProofOfNameCredential',
+        schema: "http://schema.org",
+        familyName: "schema:familyName",
+        givenName: "schema:givenName"
       }
     ]
   },
@@ -36,7 +41,12 @@ export const claimsMetadata: ClaimsMetadataSummary = {
     name: 'Public Profile',
     context: [
       {
-        PublicProfileCredential: 'https://identity.jolocom.com/terms/PublicProfileCredential'
+        PublicProfileCredential: 'https://identity.jolocom.com/terms/PublicProfileCredential',
+        schema: "http://schema.org",
+        name: "schema:name",
+        description: "schema:description",
+        image: "schema:image",
+        url: "schema:url"
       }
     ]
   }
