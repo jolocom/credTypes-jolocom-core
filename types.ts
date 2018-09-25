@@ -1,4 +1,4 @@
-export type validContextEntry = string | { [key: string]: validContextEntry }
+export type ContextEntry = string | { [key: string]: ContextEntry }
 export type ClaimInterface = {
   [key: string]: string | number | boolean
 }
@@ -6,7 +6,7 @@ export type ClaimInterface = {
 export interface BaseMetadata {
   type: string[]
   name: string
-  context?: validContextEntry[]
+  context?: ContextEntry[]
   claimInterface?: {
     [key: string]: string | number | boolean | ClaimInterface
   }
