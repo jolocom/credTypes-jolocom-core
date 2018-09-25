@@ -1,6 +1,6 @@
 import { ClaimsMetadataSummary } from './types'
 
-export { BaseMetadata, ContextEntry, ClaimInterface} from './types'
+export { BaseMetadata, ContextEntry, ClaimInterface } from './types'
 
 export const claimsMetadata: ClaimsMetadataSummary = {
   emailAddress: {
