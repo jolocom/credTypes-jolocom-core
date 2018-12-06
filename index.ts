@@ -49,5 +49,20 @@ export const claimsMetadata: ClaimsMetadataSummary = {
         url: "schema:url"
       }
     ]
+  },
+  postalAddress: {
+    type: ['Credential', 'ProofOfPostalAddressCredential'],
+    name: 'Postal Address',
+    context: [
+      {
+        ProofOfPostalAddressCredential: 'https://identity.jolocom.com/terms/ProofOfPostalAddressCredential',
+        schema: "http://schema.org/",
+        addressLine1: "schema:streetAddress",
+        addressLine2: "schema:streetAddress",
+        postalCode: "schema:postalCode",
+        city: "schema:addressLocality",
+        country: "schema:addressCountry"
+      }
+    ]
   }
 }

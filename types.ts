@@ -40,9 +40,20 @@ export interface PublicProfileClaimMetadata extends BaseMetadata {
   }
 }
 
+export interface PostalAddressClaimMetadata extends BaseMetadata {
+  claimInterface?: {
+    addressLine1: "schema:streetAddress",
+    addressLine2?: "schema:streetAddress",
+    postalCode: "schema:postalCode",
+    city: "schema:addressLocality",
+    country: "schema:addressCountry"
+  }
+}
+
 export interface ClaimsMetadataSummary {
   emailAddress: EmailClaimMetadata
   mobilePhoneNumber: MobilePhoneNumberClaimMetadata
   name: NameClaimMetadata
   publicProfile: PublicProfileClaimMetadata
+  postalAddress: PostalAddressClaimMetadata
 }
