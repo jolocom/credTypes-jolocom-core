@@ -20,7 +20,8 @@ export const claimsMetadata: ClaimsMetadataSummary = {
     context: [
       {
         ProofOfMobilePhoneNumberCredential: 'https://identity.jolocom.com/terms/ProofOfMobilePhoneNumberCredential',
-        telephone: "http://schema.org/telephone"
+        schema: "http://schema.org/",
+        telephone: "schema:telephone"
       }
     ]
   },
@@ -64,5 +65,21 @@ export const claimsMetadata: ClaimsMetadataSummary = {
         country: "schema:addressCountry"
       }
     ]
+  },
+  businessCard: {
+    type: ['Credential', 'ProofOfBusinessCardCredential'],
+    name: 'Business Card',
+    context: [
+        {
+          ProofOfBusinessCardCredential: 'https://identity.jolocom.com/terms/ProofOfBusinessCardCredential',
+          schema: "http://schema.org/",
+          familyName: "schema:familyName",
+          givenName: "schema:givenName",
+          email: "schema:email",
+          telephone: "schema:telephone",
+          legalCompanyName: "schema:legalName"
+        }
+    ]
+
   }
 }
