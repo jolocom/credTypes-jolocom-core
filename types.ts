@@ -8,7 +8,7 @@ export interface BaseMetadata {
   name: string
   context?: ContextEntry[]
   claimInterface?: {
-    [key: string]: string | number | boolean | ClaimInterface | undefined
+    [key: string]: string | number | boolean | ClaimInterface
   }
 }
 
