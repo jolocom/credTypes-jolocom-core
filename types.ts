@@ -48,10 +48,21 @@ export interface PostalAddressClaimMetadata extends BaseMetadata {
   }
 }
 
+export interface BusinessCardClaimMetadata extends BaseMetadata {
+  claimInterface?: {
+    givenName: string
+    familyName: string
+    email: string
+    telephone: string
+    legalCompanyName: "schema:legalName"
+  }
+}
+
 export interface ClaimsMetadataSummary {
   emailAddress: EmailClaimMetadata
   mobilePhoneNumber: MobilePhoneNumberClaimMetadata
   name: NameClaimMetadata
   publicProfile: PublicProfileClaimMetadata
   postalAddress: PostalAddressClaimMetadata
+  businessCard: BusinessCardClaimMetadata
 }
