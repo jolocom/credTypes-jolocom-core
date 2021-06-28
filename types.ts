@@ -1,15 +1,13 @@
 export type ContextEntry = string | { [key: string]: ContextEntry }
 export type ClaimInterface = {
-  [key: string]: string | number | boolean
+  [key: string]: string | number | boolean | ClaimInterface | ClaimInterface[]
 }
 
 export interface BaseMetadata {
   type: string[]
   name: string
   context?: ContextEntry[]
-  claimInterface?: {
-    [key: string]: string | number | boolean | ClaimInterface | undefined
-  }
+  claimInterface?: ClaimInterface
 }
 
 export interface EmailClaimMetadata extends BaseMetadata {
